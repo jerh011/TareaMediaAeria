@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Ejercicio1_1 from './Components/Tema1/Ejercicio1_1'
 import Ejercicio1_2 from './Components/Tema1/Ejercicio1_2'
 import Ejercicio1_3 from './Components/Tema1/Ejercicio1_3'
+import Reloj from './Components/Tema1/reloj'
 //tema2
 import Header from './Components/Tema 2/Ejercicio 1/Header'
 import About from './Components/Tema 2/Ejercicio 1/About'
@@ -31,6 +32,7 @@ function App() {
           <Ejercicio1_1/>
           <Ejercicio1_2/>
           <Ejercicio1_3/>
+            <Reloj/>
      <h1><strong>-----------------Tema 2.1-----------------</strong></h1>
           <Header/>
           <About/>
