@@ -23,40 +23,96 @@ import MenuItem from './Components/Tema4/Ejercicio4_2/MenuItem'
 import Ejecicio5_1 from './Components/Tema5/Ejercicio 5_1/Ejecicio5_1'
 import Ejercicio5_2 from './Components/Tema5/Ejeccicio5_2/Ejercicio5_2'
 function App() {
- 
+  
+  const [activeTema, setActiveTema] = useState('Tema1'); // Solo guardamos el tema activo
+
+  const activateTema = (tema) => {
+    setActiveTema(tema);
+  }
+  
 
   return (
-    <>
-      <div>
-        <h1><strong>-----------------Tema 1-----------------</strong></h1>
-          <Ejercicio1_1/>
-          <Ejercicio1_2/>
-          <Ejercicio1_3/>
-            <Reloj/>
-     <h1><strong>-----------------Tema 2.1-----------------</strong></h1>
-          <Header/>
-          <About/>
-          <Contact/>
-          <Footer/>
-        
-         <h1><strong>-----------------Tema2.2-----------------</strong></h1>
-            <Navbar/>
-            <ProjectCard/>
-            <SkillBadge/>
-            <SocialLink/>
-          <h1><strong>-----------------Tema3.1----------------</strong></h1>
-            <Ejercicio3_1/>
-            <Ejercicio3_2/>
+    <div>
+      <button id="Tema1" onClick={() => activateTema('Tema1')}>
+        {activeTema === 'Tema1' ? 'Ocultar Tema 1' : 'Mostrar Tema 1'}
+      </button>
+      <button id="Tema2" onClick={() => activateTema('Tema2')}>
+        {activeTema === 'Tema2' ? 'Ocultar Tema 2' : 'Mostrar Tema 2'}
+      </button>
+      <button id="Tema3" onClick={() => activateTema('Tema3')}>
+        {activeTema === 'Tema3' ? 'Ocultar Tema 3' : 'Mostrar Tema 3'}
+      </button>
+      <button id="Tema4" onClick={() => activateTema('Tema4')}>
+        {activeTema === 'Tema4' ? 'Ocultar Tema 4' : 'Mostrar Tema 4'}
+      </button>
+      <button id="Tema5" onClick={() => activateTema('Tema5')}>
+        {activeTema === 'Tema5' ? 'Ocultar Tema 5' : 'Mostrar Tema 5'}
+      </button>
+
+      {activeTema === 'Tema1' && (
+        <div>
+          <h1><strong>-----------------Tema 1-----------------</strong></h1>
+          <div>
+            <Ejercicio1_1 />
+            <Ejercicio1_2 />
+            <Ejercicio1_3 />
+            <Reloj />
+          </div>
+        </div>
+      )}
+
+      {activeTema === 'Tema2' && (
+        <div>
+          <h1><strong>-----------------Tema 2-----------------</strong></h1>
+          <div>
+            <Header />
+            <About />
+            <Contact />
+            <Footer />
+          </div>
+          <h1><strong>-----------------Tema2.2-----------------</strong></h1>
+          <div>
+            <Navbar />
+            <ProjectCard />
+            <SkillBadge />
+            <SocialLink />
+          </div>
+        </div>
+      )}
+
+      {activeTema === 'Tema3' && (
+        <div>
+          <Ejercicio3_1 />
+          <Ejercicio3_2 />
+        </div>
+      )}
+
+      {activeTema === 'Tema4' && (
+        <div>
           <h1><strong>-----------------Tema4----------------</strong></h1>
-            <Gallery/>
+          <div>
+            <Gallery />
+          </div>
           <h1><strong>-----------------Tema4.2----------------</strong></h1>
-            <MenuItem/>
+          <div>
+            <MenuItem />
+          </div>
+        </div>
+      )}
+
+      {activeTema === 'Tema5' && (
+        <div>
           <h1><strong>-----------------Tema5.1----------------</strong></h1>
-             <Ejecicio5_1/>
+          <div>
+            <Ejecicio5_1 />
+          </div>
           <h1><strong>-----------------Tema5.2----------------</strong></h1>
-              <Ejercicio5_2/>
-        </div> 
-    </>
+          <div>
+            <Ejercicio5_2 />
+          </div>
+        </div>
+      )}
+    </div>
   )
 }
 
