@@ -29,24 +29,24 @@ function App() {
   const activateTema = (tema) => {
     setActiveTema(tema);
   }
-  
+
 
   return (
     <div>
       <button id="Tema1" onClick={() => activateTema('Tema1')}>
-        {activeTema === 'Tema1' ? 'Ocultar Tema 1' : 'Mostrar Tema 1'}
+       Tema 1
       </button>
       <button id="Tema2" onClick={() => activateTema('Tema2')}>
-        {activeTema === 'Tema2' ? 'Ocultar Tema 2' : 'Mostrar Tema 2'}
+        Tema 2
       </button>
       <button id="Tema3" onClick={() => activateTema('Tema3')}>
-        {activeTema === 'Tema3' ? 'Ocultar Tema 3' : 'Mostrar Tema 3'}
+        Tema 3
       </button>
       <button id="Tema4" onClick={() => activateTema('Tema4')}>
-        {activeTema === 'Tema4' ? 'Ocultar Tema 4' : 'Mostrar Tema 4'}
+       Tema 4
       </button>
       <button id="Tema5" onClick={() => activateTema('Tema5')}>
-        {activeTema === 'Tema5' ? 'Ocultar Tema 5' : 'Mostrar Tema 5'}
+        Tema 5
       </button>
 
       {activeTema === 'Tema1' && (
