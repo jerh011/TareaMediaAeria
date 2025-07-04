@@ -1,0 +1,17 @@
+.Ejercicio4_2{
+margin: 10px 0 10px 0 ;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-items: center;
+ gap: 1rem;
+}
+
+.Eje1Tem4{
+ margin: 10px 0 10px 0 ;
+ display: flex;
+ flex-direction: column;
+ align-items:start;
+ justify-items: center;
+ gap: 1rem;
+}

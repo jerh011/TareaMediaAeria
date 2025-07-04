@@ -1,10 +1,10 @@
 import Products from "./Products";
 function Category({ nombre, productos }) {
   return (
-    <div>
+    <div className="category">
       <hr />
       <h2 >{nombre}</h2>
-      <div>
+      <div >
         {productos.map((prod) => (
           <Products key={prod.nombre} data={prod} />
         ))}

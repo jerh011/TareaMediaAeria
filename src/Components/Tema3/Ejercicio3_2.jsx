@@ -38,19 +38,21 @@ function Ejercicio3_2() {
     },
   ];
   const paginasTotales = libros.reduce((total, x) => total + x.paginas, 0);
-  const generos = libros.map(libro => libro.genero);
+  const generos = libros.map((libro) => libro.genero);
 
-  const coontgenero={}
-  
-  generos.forEach(genero => {
-    if(coontgenero[genero])
-      coontgenero[genero]++;
-    else
-      coontgenero[genero]=1;
+  const coontgenero = {};
+
+  generos.forEach((genero) => {
+    if (coontgenero[genero]) coontgenero[genero]++;
+    else coontgenero[genero] = 1;
   });
 
   return (
-    <div>
+    <>
+    <h2>Ejececicio 3.2</h2>
+    <div className="Ejecicio3_2">
+    
+    
       <table border="1">
         <tr>
           <th>titulo</th>
@@ -73,14 +75,19 @@ function Ejercicio3_2() {
       <hr />
       <p>Paginas totales: {paginasTotales}</p>
       <hr />
-     {generos.map(x=>{ return <p>{x}</p>})}
-     <hr/>
-     {Object.keys(coontgenero).map(x => (
-      <p key={x}>
-      {x}: {coontgenero[x]}
-  </p>
-))}
+      <div>
+        {generos.map((x) => {
+          return <p>{x}</p>;
+        })}
+        <hr />
+        {Object.keys(coontgenero).map((x) => (
+          <p key={x}>
+            {x}: {coontgenero[x]}
+          </p>
+        ))}
+      </div>
     </div>
+        </>
   );
 }
 export default Ejercicio3_2;

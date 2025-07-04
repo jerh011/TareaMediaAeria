@@ -31,8 +31,9 @@ const postres = [
 function MenuItem(){
 
     return (
-
-        <div>
+<>
+<h2>Ejercicio4.2</h2>
+        <div className="Ejercicio4_2">
              <table border="1">
         <tr>
           <th>nombre</th>
@@ -46,6 +47,7 @@ function MenuItem(){
            </table>
            <RestaurantInfo nombreRestaurante="nombreRestaurante" descripcionRestaurante="descripcionRestaurante" direccion="direccion" telefono="telefono"/> 
         </div>
+</>
     )
 }
 

@@ -4,11 +4,11 @@ function Products({ data }) {
 
   return (
     <div >
-      
+     
       <h3>{nombre}</h3>
       <p>Precio original: ${precio}</p>
       <p>Descuento: {descuento}%</p>
-      <p><strong>Precio final: €{precioFinal}</strong></p>
+      <p><strong>Precio final: ${precioFinal}</strong></p>
     </div>
   );
 }

@@ -6,12 +6,15 @@ function Ejercicio3_1(){
             { titulo: "Matrix", año: 1999 },
             { titulo: "Inception", año: 2010 }
 ]
-//reduce  suma todos los valores ingresados 
+
     const añostotales=peliculas.reduce((total,x)=> total +x.año,0);
-    //ayuda a redondiar el promedio 
+ 
     const promedio=Math.round(añostotales/peliculas.length);
     return(
-        <div>
+        <>
+        <h2>Ejececicio 3.1</h2>
+        <div className="Ejecicio3_1">
+             
             <h3>Top paliculas del mundo mundial</h3>
             <hr/>
             <ul>
@@ -27,6 +30,7 @@ function Ejercicio3_1(){
             <hr />
           
         </div>
+                </>
     )
 }
 export default Ejercicio3_1

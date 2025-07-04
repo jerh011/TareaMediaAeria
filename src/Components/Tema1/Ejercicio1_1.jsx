@@ -7,8 +7,8 @@ function Ejercicio1_1() {
   const pasatiempos = ["Video Juegos", "Programar", "Viajar"]
   const colorFavorito = "Azul metalico"
   return (
-    <div>
-      <h1>Ejercicio 1.1</h1>
+    <div className="Ejercicio1_1">
+      <h2>Ejercicio 1.1</h2>
       <p>Nombre:{nombre}</p>
       <p>Edad:{edad}</p>
       <p>Ciudad:{ciudad}</p>

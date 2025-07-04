@@ -3,7 +3,7 @@ function Footer(){
 
     return( 
         <div>
-            <p>{año.toString()}</p>
+            <p>Año: {año.toString()}</p>
         </div>
     )
 }

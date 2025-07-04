@@ -20,8 +20,8 @@ function Ejercicio1_2(){
 
     
     return (
-    <div>
-      <h1>Ejercicio 1.2</h1>
+    <div className="ejercicio1_2">
+      <h2>Ejercicio 1.2</h2>
       <p>Años de Experiencia:{añosExperiencia}</p>
       <p>Cafés por Día: {cafesPorDia}</p>
       <p>Horas de Sueño por Día: {horasSueñoPorDia}</p>

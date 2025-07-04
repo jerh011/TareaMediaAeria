@@ -1,0 +1,10 @@
+.Ejecicio5_2{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+   
+}
+.estudiantes{
+    border: black 1px  solid;
+}

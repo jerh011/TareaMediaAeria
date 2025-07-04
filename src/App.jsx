@@ -1,119 +1,87 @@
-import { useState } from 'react'
-import Ejercicio1_1 from './Components/Tema1/Ejercicio1_1'
-import Ejercicio1_2 from './Components/Tema1/Ejercicio1_2'
-import Ejercicio1_3 from './Components/Tema1/Ejercicio1_3'
-import Reloj from './Components/Tema1/reloj'
+import "./app.css";
+import { useState } from "react";
+import Tema1 from "./Components/Tema1/Tema1";
 //tema2
-import Header from './Components/Tema 2/Ejercicio 1/Header'
-import About from './Components/Tema 2/Ejercicio 1/About'
-import Contact from './Components/Tema 2/Ejercicio 1/Contact'
-import Footer from './Components/Tema 2/Ejercicio 1/Footer'
-
-import Navbar from './Components/Tema 2/Ejercicio 2/NavBar'
-import SocialLink from './Components/Tema 2/Ejercicio 2/SocialLinks'
-import SkillBadge from './Components/Tema 2/Ejercicio 2/SkillBadge'
-import ProjectCard from './Components/Tema 2/Ejercicio 2/ProjectCard'
+import Tema2 from "./Components/Tema 2/Tema2";
 //tema3
-import Ejercicio3_1 from './Components/Tema3/Ejecicio3_1'
-import Ejercicio3_2 from './Components/Tema3/Ejercicio3_2'
+import Tema3 from "./Components/Tema3/Tema3";
 //teama 4
-import Gallery from './Components/Tema4/Ejecicio4_1/Gallery'
-import MenuItem from './Components/Tema4/Ejercicio4_2/MenuItem'
+import Tema4 from "./Components/Tema4/Tema4";
 //Tema5
-import Ejecicio5_1 from './Components/Tema5/Ejercicio 5_1/Ejecicio5_1'
-import Ejercicio5_2 from './Components/Tema5/Ejeccicio5_2/Ejercicio5_2'
+import Tema5 from "./Components/Tema5/Tema5";
 function App() {
-  
-  const [activeTema, setActiveTema] = useState('Tema1'); // Solo guardamos el tema activo
+  const [activeTema, setActiveTema] = useState("Tema1"); // Solo guardamos el tema activo
 
   const activateTema = (tema) => {
     setActiveTema(tema);
-  }
-
+  };
 
   return (
-    <div>
-      <button id="Tema1" onClick={() => activateTema('Tema1')}>
-       Tema 1
-      </button>
-      <button id="Tema2" onClick={() => activateTema('Tema2')}>
-        Tema 2
-      </button>
-      <button id="Tema3" onClick={() => activateTema('Tema3')}>
-        Tema 3
-      </button>
-      <button id="Tema4" onClick={() => activateTema('Tema4')}>
-       Tema 4
-      </button>
-      <button id="Tema5" onClick={() => activateTema('Tema5')}>
-        Tema 5
-      </button>
+    <>
+      <div className="Botones centrar">
+        <button id="Tema1" onClick={() => activateTema("Tema1")}>
+          Tema 1
+        </button>
+        <button id="Tema2" onClick={() => activateTema("Tema2")}>
+          Tema 2
+        </button>
+        <button id="Tema3" onClick={() => activateTema("Tema3")}>
+          Tema 3
+        </button>
+        <button id="Tema4" onClick={() => activateTema("Tema4")}>
+          Tema 4
+        </button>
+        <button id="Tema5" onClick={() => activateTema("Tema5")}>
+          Tema 5
+        </button>
+      </div>
 
-      {activeTema === 'Tema1' && (
-        <div>
-          <h1><strong>-----------------Tema 1-----------------</strong></h1>
-          <div>
-            <Ejercicio1_1 />
-            <Ejercicio1_2 />
-            <Ejercicio1_3 />
-            <Reloj />
+      {activeTema === "Tema1" && (
+        <div className="container">
+          <div className="encabezado centrar">
+            <h1> <strong>Tema 1</strong></h1>
           </div>
+          <Tema1 />
         </div>
       )}
 
-      {activeTema === 'Tema2' && (
-        <div>
-          <h1><strong>-----------------Tema 2-----------------</strong></h1>
-          <div>
-            <Header />
-            <About />
-            <Contact />
-            <Footer />
+      {activeTema === "Tema2" && (
+         <div className="container">
+          <div className="encabezado centrar">
+            <h1> <strong>Tema 2</strong></h1>
           </div>
-          <h1><strong>-----------------Tema2.2-----------------</strong></h1>
-          <div>
-            <Navbar />
-            <ProjectCard />
-            <SkillBadge />
-            <SocialLink />
-          </div>
+          <Tema2 />
         </div>
       )}
 
-      {activeTema === 'Tema3' && (
-        <div>
-          <Ejercicio3_1 />
-          <Ejercicio3_2 />
+      {activeTema === "Tema3" && (
+        <div className="container">
+          <div className="encabezado centrar">
+            <h1> <strong>Tema 3</strong></h1>
+          </div>
+          <Tema3 />
         </div>
       )}
 
-      {activeTema === 'Tema4' && (
-        <div>
-          <h1><strong>-----------------Tema4----------------</strong></h1>
-          <div>
-            <Gallery />
+      {activeTema === "Tema4" && (
+        <div className="container">
+          <div className="encabezado centrar">
+            <h1> <strong>Tema 4</strong></h1>
           </div>
-          <h1><strong>-----------------Tema4.2----------------</strong></h1>
-          <div>
-            <MenuItem />
-          </div>
+          <Tema4 />
         </div>
       )}
 
-      {activeTema === 'Tema5' && (
-        <div>
-          <h1><strong>-----------------Tema5.1----------------</strong></h1>
-          <div>
-            <Ejecicio5_1 />
+      {activeTema === "Tema5" && (
+        <div className="container">
+          <div className="encabezado centrar">
+            <h1> <strong>Tema 1</strong></h1>
           </div>
-          <h1><strong>-----------------Tema5.2----------------</strong></h1>
-          <div>
-            <Ejercicio5_2 />
-          </div>
+          <Tema5 />
         </div>
       )}
-    </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;

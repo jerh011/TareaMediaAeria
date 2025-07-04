@@ -34,6 +34,8 @@ const empleados = [
 
 function Ejecicio5_1() {
   return (
+    <>
+    <h2>Ejercicio 5.1</h2>
     <table border="6">
       <thead>
         <tr>
@@ -49,6 +51,7 @@ function Ejecicio5_1() {
         })}
       </tbody>
     </table>
+        </>
   );
 }
 

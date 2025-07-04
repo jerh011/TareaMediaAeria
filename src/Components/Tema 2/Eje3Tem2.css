@@ -1,0 +1,23 @@
+.author{
+    font-family: 'Courier New', Courier, monospace ;
+}
+.comment{
+    background-color: ;
+}
+.secciondecomentarios{
+    border: black 1px solid;
+}
+.postfooter{
+    background-color: aqua;   
+}
+.PostContent{
+    background-color: aquamarine;
+     border: black 1px solid;
+}
+.PostHeader{
+    border: black 1px solid;
+    background-color: azure;
+}
+.BlogPost{
+
+}

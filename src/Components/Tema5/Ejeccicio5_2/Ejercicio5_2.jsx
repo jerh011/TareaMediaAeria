@@ -28,12 +28,15 @@ function Ejercicio5_2() {
   }));
 
   return (
+    <>
+    <h2>Ejercicio 5.2</h2>
     <div >
       <h1>Tienda Online</h1>
       {productosPorCategoria.map((cat) => (
         <Category key={cat.nombre} nombre={cat.nombre} productos={cat.productos} />
       ))}
     </div>
+      </>
   );
 }
 

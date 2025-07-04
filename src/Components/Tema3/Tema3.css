@@ -1,0 +1,24 @@
+.Ejecicio3_1{
+
+ height: 100%;
+     display: flex;
+     flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: .5rem;
+}
+.Ejecicio3_2{
+
+    height: 100%;
+     display: flex;
+     flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: .5rem;
+}
+.eje3Tem3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}

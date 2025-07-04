@@ -1,5 +1,6 @@
 import PhotoCard from "./PhotoCard";
 import GalleryHead from "./GalleryHeader";
+
 function Gallery() {
   const fotos = [
     {
@@ -37,18 +38,27 @@ function Gallery() {
   const tituloGaleria = "Momentos Capturados";
   const subtituloGaleria = "Galería de fotografía profesional";
 
-  
   return (
-    <div>
-        <GalleryHead tituloGaleria={tituloGaleria} subtituloGaleria={subtituloGaleria}/>
-        {
-        fotos.map((x,index)=>
-            {return <div> 
-                <PhotoCard cont={index} titulo={x.titulo} descripcion={x.descripcion}/>   
-            </div> 
-        })}  
-       
-    </div>
+    <>
+      <h2>Ejececicio 4.1</h2>
+      <div className="Eje1Tem4">
+        <GalleryHead
+          tituloGaleria={tituloGaleria}
+          subtituloGaleria={subtituloGaleria}
+        />
+        {fotos.map((x, index) => {
+          return (
+            <>
+              <PhotoCard
+                cont={index}
+                titulo={x.titulo}
+                descripcion={x.descripcion}
+              />
+            </>
+          );
+        })}
+      </div>
+    </>
   );
-} 
+}
 export default Gallery;

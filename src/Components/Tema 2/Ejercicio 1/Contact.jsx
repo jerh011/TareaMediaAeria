@@ -6,10 +6,10 @@ function Contact(){
     
     return(
         <div>
-           <p>Email:{email}</p>
-           <p>Github:{github}</p>
-           <p>Telefono:{telefono}</p>
-           <p>Ubicacion:{ubicacion}</p>
+           <p>Email: {email}</p>
+           <p>Github: {github}</p>
+           <p>Telefono: {telefono}</p>
+           <p>Ubicacion: {ubicacion}</p>
         </div>
     )
 }

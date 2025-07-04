@@ -42,8 +42,8 @@ function Reloj() {
    frase = 'Ya duerme no es una opcion .';
 
   return (
-    <div >
-      <h2>Dashboard Dinámico</h2>
+    < div className='ejercicio1_3'>
+      <h2>Relog Digital</h2>
       <p>Hora actual: {horaActual}</p>
       <p>Días hasta tu cumpleaños: {diasRestantes}</p>
       <p>Hoy es: {dia} — {mensajeDia}</p>
